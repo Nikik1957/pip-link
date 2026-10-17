@@ -1,0 +1,13 @@
+{
+  "_comment": "Copy to marker_styles.json. 'icons': text found in the pin's icon URL -> marker. 'names': text in the pin name -> marker. Checked before the built-in rules. Markers: LANDMARK VAULT TOWN CAMP CAVE MILITARY FACTORY RADIO MEDICAL WATER DANGER HOME QUEST TARGET FLAG VEHICLE AIRPORT STORE DINER GAS NATURE INFO PERSON",
+  "icons": {
+    "red-circle": "DANGER",
+    "grn-diamond": "WATER",
+    "ylw-pushpin": "LANDMARK"
+  },
+  "names": {
+    "rally point": "FLAG",
+    "cache": "QUEST"
+  },
+  "default": "LANDMARK"
+}

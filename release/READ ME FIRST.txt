@@ -1,0 +1,123 @@
+PIP LINK  -  setup for a Pip-Boy 3000 + Seeed XIAO ESP32-S3
+=============================================================
+
+Double-click "PIP LINK Setup.exe". There is nothing to install.
+
+The first time, Windows may say "Windows protected your PC". That happens because
+the program isn't from the Microsoft Store. Click "More info", then "Run anyway".
+
+The program has three steps. Do them in order:
+
+ 1  PIP LINK UNIT    Put the new firmware on the XIAO board.
+                     Plug the board into the PC, hold its B button, tap its R button,
+                     then click INSTALL FIRMWARE. Afterwards, tap R once.
+
+ 2  PIP-BOY          Plug the Pip-Boy into the PC and switch it on. Pick your time zone,
+                     then click INSTALL ON PIP-BOY. Restart the Pip-Boy once afterwards.
+
+ 3  MAPS             FIND your town (or county, or state) - or RIGHT-drag a box on the
+                     map - pick how close you want to zoom, and click ADD TO MAP.
+                     Maps grow: adding more areas, or more detail in a small area,
+                     only adds to the map - nothing already built is lost.
+                     Big areas: get the state's OFFLINE DATA first (Nevada: 120 MB).
+                     A stopped build continues with AREAS > RESUME.
+                     Then SEND TO PIP-BOY (USB - fine for a town, about 10 minutes)
+                     or COPY TO SD CARD (big maps: put the Pip-Boy's card in a card
+                     reader). Both continue where they stopped if interrupted.
+                     PREVIEW shows how an area will look with the options picked,
+                     before anything is built or saved.
+                     PINS: add Google Earth pins (ADD KMZ/KML), then check them on the
+                     map - click one to fix its icon or name, DELETE it, DUPLICATES
+                     finds repeats, NEW PIN adds one where you click. They go into the
+                     Pip-Boy's GO TO list (with your fixes) when the map is sent.
+
+Then connect the PIP LINK unit to the Pip-Boy with the powered USB-C cable.
+The Pip-Boy switches to PIP LINK by itself. Pick your radio from the list:
+  MeshCore radios     type the radio's Bluetooth PIN
+  Meshtastic radios   PIP LINK connects first; if the radio asks, type the PIN it
+                      shows on its screen (or 123456 if it has no screen)
+One radio at a time. You can switch radios later in SETTINGS > LoRa radio.
+
+On the Pip-Boy:
+  Side switch              picks the tab: MESH / MAP / RADIATION / TERM / SETTINGS (top to bottom)
+  Knob 2 (3 clicks)        also changes tab
+  STATS                    open the most recent chat (press again: back to the MESH list)
+  ITEMS / DATA             jump to MAP / RADIATION (the button lights up on its tab)
+  A blinking button        something is waiting behind it - press it:
+                             STATS  unread messages: opens the newest one
+                             ITEMS  someone shared a location: the map, centred on it
+                             DATA   the radiation alarm went off: the RADIATION page
+  Hold STATS               leave PIP LINK, back to the Pip-Boy's own menus
+  Scroll wheel             move up and down; press the wheel to select
+  MESH tab                 your channels, your favorite contacts, then CONTACTS: every contact
+                           (favorites first, then most recent). Press on one for MESSAGE /
+                           FAVORITE / REMOVE FROM RADIO (click twice to remove). A MeshCore radio
+                           that adds contacts automatically adds it back when it hears it again.
+                           ADVERTISE: your radio announces itself to the mesh right away.
+  RADIATION tab            dose rate in rads, like the game (urad/h, mrad/h, rad/h);
+                           normal background is about 10 urad/h
+  On the MAP tab           press the wheel to open the menu: ZOOM / PAN / CONTACTS / GO TO / CENTER ON ME
+                           (turn knob 2 to choose, press the wheel to pick)
+                           ZOOM: turn the scroll wheel to zoom in or out
+                           PAN: the scroll wheel moves north/south, knob 2 moves east/west,
+                           in small steps (the map slides over at once, the new edge fills
+                           in a moment later); press the wheel when you're done
+                           A small crosshair marks the middle of the map while you look around.
+                           GO TO opens your list of saved locations (nearest first):
+                             NEW            save the spot under the crosshair: name it, pick an icon
+                             MANUAL ENTRY   type a position like 35.8325,-115.4319 to look there
+                             pick a location:  GO TO   centre the map on it
+                                               NAV     dotted line from you to it, with the
+                                                       distance and compass direction (azimuth);
+                                                       it gets a * and moves to the top of the list.
+                                                       Pick it again for STOP NAV.
+                                               SHARE   send it to a channel or contact. Other
+                                                       PIP LINKs beep and add it to their list.
+                                               DELETE  remove it
+                           Knob 2 goes back a step.
+  TERM tab                 connect to a computer on your Wi-Fi (e.g. a Raspberry Pi)
+                             WI-FI NETWORK    pick your network, type its password
+                             NEW CONNECTION   pi@raspberrypi.local  = SSH (type user@computer)
+                                              raspberrypi.local     = Telnet
+                                              bbs.example.com:2323  = another port
+                           Pick a saved computer for CONNECT / DELETE / MODE. MODE BBS (the
+                           Telnet default) shows BBS art at 80x24; MODE STANDARD is
+                           for Linux computers like a Raspberry Pi.
+                           SSH: the first time, check and ACCEPT the computer's key; then type
+                           your password (asked each time, never saved). If PIP LINK ever says
+                           the key CHANGED, don't log in unless you know the computer was reinstalled.
+                           In a session the scroll wheel scrolls back through earlier text
+                           (press it to jump back to the live screen). Pressing it opens
+                           TYPE / CTRL-C / ESC / TAB / SIZE / WHEEL / DISCONNECT.
+                             SIZE    text size: LARGE 58x12, MEDIUM 66x16, SMALL 78x24
+                             WHEEL   make the wheel send Up/Down keys instead (menus, nano)
+                           A Bluetooth keyboard types straight into the computer.
+                           Wi-Fi is only on while you use this tab.
+  SETTINGS                 Theme: PIP-BOY uses the colour picked in the Pip-Boy's own settings
+                           (presets or a custom colour); GREEN or AMBER override it while
+                           PIP LINK is open
+                           Map locations: SHOWN / HIDDEN (your saved locations on the map)
+                           Tab wheel / Scroll wheel: how many clicks make one step (also
+                           used by the on-screen keyboard)
+                           Text margin: if the first letters of SSH / Telnet text are cut
+                           off at the left edge, click to move the text right (0-12 px)
+                           Keyboard: pick a Bluetooth keyboard. It has to be in pairing mode
+                           to show up - a Logitech keyboard: press an Easy-Switch key (1-3),
+                           then hold it about 3 s until it blinks fast. A keyboard that is
+                           still paired to another PIP LINK, phone or PC stays hidden until
+                           then. Choosing (none) unpairs it from this PIP LINK.
+  On-screen keyboard       scroll wheel: row, knob 2: column, press: type the key. The
+                           highlight stops at the edges. CANC asks before throwing away
+                           your text (turn to YES, press).
+
+With a Bluetooth LE keyboard (pair it in SETTINGS > Keyboard):
+  Left / Right / Tab       change tab          1 - 5      jump to a tab
+  Up / Down                move                Enter      select       Esc   back
+  In a chat                just start typing to reply, Enter sends
+  On the MAP tab           Up/Down or + / -  zoom      P  pan with the arrow keys (Enter = done)
+                           C  contacts   G  GO TO list   H  back to your position
+
+Updates: when you get a file called PIP-LINK-update-v....zip, open the UPDATES page,
+click LOAD UPDATE FILE, then do steps 1 and 2 again. Your settings and maps are kept.
+
+

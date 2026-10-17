@@ -1,0 +1,7 @@
+# keep line endings as they are in the project (LF), except the Windows text files that ship to users
+* text=auto eol=lf
+release/*.txt text eol=crlf
+*.wav binary
+*.png binary
+*.ico binary
+*.ttf binary

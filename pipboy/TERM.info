@@ -1,0 +1,8 @@
+{
+  "id": "TERM",
+  "name": "PIP LINK",
+  "version": "0.9.0",
+  "files": "HOLO/TERM/APP.js,HOLO/TERM/MAP.js,HOLO/TERM/KB.js",
+  "src": "HOLO/TERM/APP.js",
+  "icon": "APPINFO/HOLO.IMG"
+}

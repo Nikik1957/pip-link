@@ -1,0 +1,13 @@
+PIP LINK includes these open-source components (in the PIP LINK unit's firmware):
+
+  libssh / LibSSH-ESP32 5.9.0   LGPL-2.1   https://www.libssh.org  https://github.com/ewpa/LibSSH-ESP32
+  NimBLE-Arduino                Apache-2.0 https://github.com/h2zero/NimBLE-Arduino
+  Arduino-ESP32 / ESP-IDF       Apache-2.0 / LGPL-2.1 (parts)  https://github.com/espressif
+  mbed TLS (in ESP-IDF)         Apache-2.0 https://github.com/Mbed-TLS/mbedtls
+  ESP-IDF USB CDC-ACM host      Apache-2.0
+  Map data                      (c) OpenStreetMap contributors, ODbL - https://www.openstreetmap.org/copyright
+  Terrain                       AWS Terrain Tiles (Mapzen / USGS / SRTM and others)
+
+libssh is licensed under the GNU Lesser General Public License 2.1. Its source code is available
+from the links above; the PIP LINK firmware can be rebuilt against a modified libssh from the
+PIP LINK source package (PlatformIO project, env "hub").

@@ -1,0 +1,18 @@
+# build output - all of it can be rebuilt (pio run -e hub, python app/build_exe.py <version>)
+.pio/
+build/
+app/assets/package/
+__pycache__/
+*.pyc
+
+# finished releases: the setup app goes on the GitHub Releases page, not in the code history.
+# READ ME FIRST.txt and THIRD-PARTY.txt are kept - pack_release.py copies them into each release.
+release/*
+!release/READ ME FIRST.txt
+!release/THIRD-PARTY.txt
+
+# logs and editor clutter
+*.log
+.vscode/
+.DS_Store
+Thumbs.db
