@@ -1,3 +1,4 @@
+<img width="3024" height="4032" alt="LAZY OTG CABLE" src="https://github.com/user-attachments/assets/cfaa3432-84f6-44c1-abc6-0765d1fd21b2" />
 # PIP LINK
 
 A companion unit for the Wand Company **Pip-Boy 3000**. A Seeed XIAO ESP32-S3 plugs into the Pip-Boy's USB-C port and turns the Pip-Boy into a field terminal:
@@ -18,6 +19,14 @@ Download `PIP LINK Setup.exe` from the [Releases](../../releases) page and read 
 - flashes the XIAO,
 - installs the holotape on the Pip-Boy,
 - builds and sends maps.
+
+## Connecting your PIPBOY
+
+The bare hardware required to get the PIPLINK working is a XAIO ESP32 S3 a powered USB splitter cable to feed 5V to the ESP32 and PIPBOY along with a data connection between the two, look up USB OTG Y cable for examples.
+1. Flash ESP32 with the `PIP LINK Setup.exe` from the [Releases](../../releases)
+2. Load the HOLOTAPE onto your PIPBOY with the `PIP LINK Setup.exe` from the [Releases](../../releases)
+3. Connect the PIPBOY to the ESP32 with the data capable plugs on the OTG Y cable.
+4. Connect the power input plug on the OTG Y cable to an external 5V source like a USB powerbank.
 
 ## Project layout
 
