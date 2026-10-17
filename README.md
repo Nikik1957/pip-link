@@ -1,4 +1,4 @@
-<img width="3024" height="4032" alt="LAZY OTG CABLE" src="https://github.com/user-attachments/assets/cfaa3432-84f6-44c1-abc6-0765d1fd21b2" />
+<img width="3024" height="4032" alt="PIPLINK WITH ACCESORIES" src="https://github.com/user-attachments/assets/1944b0e6-0dd9-4da6-82a1-125647acfebd" />
 # PIP LINK
 
 A companion unit for the Wand Company **Pip-Boy 3000**. A Seeed XIAO ESP32-S3 plugs into the Pip-Boy's USB-C port and turns the Pip-Boy into a field terminal:
@@ -27,6 +27,10 @@ The bare hardware required to get the PIPLINK working is a XAIO ESP32 S3 a power
 2. Load the HOLOTAPE onto your PIPBOY with the `PIP LINK Setup.exe` from the [Releases](../../releases)
 3. Connect the PIPBOY to the ESP32 with the data capable plugs on the OTG Y cable.
 4. Connect the power input plug on the OTG Y cable to an external 5V source like a USB powerbank.
+<img width="4032" height="3024" alt="LAZY OTG CABLE" src="https://github.com/user-attachments/assets/60ae2eea-c94a-4d25-b415-90ce2812c4fc" />
+
+## CUSTOM MAPS
+PIPLINK allows you to display real world maps in the fallout style along with saved locations, your location (if your LoRa node has a GPS), and positions sent over the LoRa Mesh.  Generating maps is handled by the setup utility stores them on your PIPBOY's SD card.  Uploading maps can be done over USB (slow) or directly to your SD card when plugged into your PC (fast).  If you are planning on generating a LARGE map (ie. the State of Nevada) it is highly recommended to select the OFFLINE maps tab and download the whole state first then convert your maps in that area. 
 
 ## Project layout
 
